@@ -1,6 +1,7 @@
 class LineItemsController < ApplicationController
-  include CurrentCart
+  include CurrentCart, VisitCounter
   before_action :set_cart, only: [:create]
+  before_action :reset_counter, only: [:create]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
   # GET /line_items
