@@ -22,6 +22,7 @@
   text-align: center;
   img{
     float: left;
+    height: 40px;
   }
 }
 #notice{
@@ -44,6 +45,9 @@
     padding: 1em 2em;
     width: 13em;
     background: #141;
+    #time{
+      color: #fff;
+    }
     ul{
       padding: 0;
       li{
